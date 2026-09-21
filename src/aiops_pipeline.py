@@ -6,7 +6,7 @@ try:
     from src.event_consumer import EventConsumer
     from src.event_producer import EventProducer
     from src.event_topic import EventTopic
-except ImportError:  # pragma: no cover - supports direct script execution
+except ImportError: 
     from anomaly_detector import AnomalyDetector
     from event_consumer import EventConsumer
     from event_producer import EventProducer
