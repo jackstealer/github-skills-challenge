@@ -1,6 +1,6 @@
 try:
     from src.event_topic import EventTopic
-except ImportError:  # pragma: no cover - supports direct script execution
+except ImportError:  
     from event_topic import EventTopic
 
 
