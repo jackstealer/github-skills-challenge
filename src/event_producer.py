@@ -1,4 +1,7 @@
-from event_topic import EventTopic
+try:
+    from src.event_topic import EventTopic
+except ImportError:  # pragma: no cover - supports direct script execution
+    from event_topic import EventTopic
 
 
 class EventProducer:
@@ -13,3 +16,4 @@ class EventProducer:
 
         self.topic.publish(event)
         return True
+
