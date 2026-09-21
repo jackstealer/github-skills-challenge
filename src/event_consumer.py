@@ -1,7 +1,4 @@
-try:
-    from src.event_topic import EventTopic
-except ImportError:  
-    from event_topic import EventTopic
+from src.event_topic import EventTopic
 
 
 class EventConsumer:
